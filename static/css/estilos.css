@@ -75,14 +75,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.7em;
-  height: 2.7em;
+  width: 2.4em;
+  height: 2.4em;
   outline: none;
   z-index: 999;
+  background: var(--Light-Grayish-Blue);
 }
 .text .info .button img {
   height: 0.8em;
   width: 0.8em;
+}
+.text .info .button #img-p {
+  display: flex;
+}
+.text .info .button #img-p.active {
+  display: none;
+}
+.text .info .button #img {
+  display: none;
+}
+.text .info .button #img.active {
+  display: flex;
+}
+.text .info #boton.active {
+  background: var(--Desaturated-Dark-Blue);
 }
 
 #redes {

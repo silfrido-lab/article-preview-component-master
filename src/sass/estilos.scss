@@ -75,15 +75,31 @@ body {
                 height: .8em;
                 width: .8em;
             }
+            #img-p {
+                display: flex;
+            }
+            #img-p.active {
+                display: none;
+            }
+            #img {
+                display: none;
+            }
+            #img.active {
+                display: flex;
+            }
             border: none;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 2.7em;
-            height: 2.7em;
+            width: 2.4em;
+            height: 2.4em;
             outline: none;
             z-index: 999;
+            background: var(--Light-Grayish-Blue);
+        }
+        #boton.active {
+            background: var(--Desaturated-Dark-Blue);
         }
     }
     border-radius: 0 0 5px 5px;
