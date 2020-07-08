@@ -1,0 +1,181 @@
+:root {
+  --veryDark-Grayish-Blue: rgb(72, 85, 106);
+  --Desaturated-Dark-Blue: rgb(109, 127, 151);
+  --Grayish-Blue: rgb(158, 175, 194);
+  --Light-Grayish-Blue: rgb(237, 242, 248);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background: var(--Light-Grayish-Blue);
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.text {
+  padding: 2.6em 2.3em;
+  padding-bottom: 1.5em;
+  background: white;
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+
+.text .title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: .3px;
+  line-height: 1.5;
+  color: var(--veryDark-Grayish-Blue);
+}
+
+.text .parrafo {
+  font-size: 1.04em;
+  font-weight: 500;
+  color: var(--Desaturated-Dark-Blue);
+  line-height: 1.5;
+  padding-top: 1.2em;
+  margin: 0;
+}
+
+.text .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55px 1fr auto;
+      grid-template-columns: 55px 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2em;
+}
+
+.text .info p {
+  padding-top: 0;
+  color: var(--veryDark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.text .info small {
+  color: var(--Grayish-Blue);
+  font-size: 1em;
+}
+
+.text .info .avatar {
+  width: 3.07em;
+  height: 3.07em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text .info .button {
+  border: none;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.7em;
+  height: 2.7em;
+  outline: none;
+  z-index: 999;
+}
+
+.text .info .button img {
+  height: .8em;
+  width: .8em;
+}
+
+#redes {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#redes.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.redes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55px 1fr auto;
+      grid-template-columns: 55px 1fr auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.3em;
+  position: relative;
+  bottom: 70px;
+  background: var(--veryDark-Grayish-Blue);
+  border-radius: 0 0 5px 5px;
+  padding: 0 1.9em;
+}
+
+.redes .redes-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+.redes a .icon {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.redes span {
+  color: var(--Grayish-Blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.redes .icon {
+  margin-left: 1em;
+}
+
+img {
+  height: 200px;
+  width: 100%;
+  display: block;
+  border-radius: 5px 5px 0 0;
+}
+
+.wrapper {
+  padding: 0 1.9em;
+}
+/*# sourceMappingURL=estilos.css.map */
