@@ -26,6 +26,22 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+body .card {
+  padding-top: 5em;
+}
+
+@media screen and (min-width: 1024px) {
+  body .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
   }
 }
 
@@ -38,7 +54,15 @@ body {
   padding-bottom: 1.5em;
   background: white;
   position: relative;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .text {
+    padding: 1.5em 2.6em;
+    border-radius: 0 10px 10px 0;
+    width: 395px;
+  }
 }
 
 .text .title {
@@ -48,6 +72,12 @@ body {
   letter-spacing: .3px;
   line-height: 1.5;
   color: var(--veryDark-Grayish-Blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .text .title {
+    font-size: 1.6em;
+  }
 }
 
 .text .parrafo {
@@ -164,43 +194,101 @@ body {
   position: relative;
   bottom: 70px;
   background: var(--veryDark-Grayish-Blue);
-  border-radius: 0 0 5px 5px;
-  padding: 0 1.9em;
+  border-radius: 0 0 10px 10px;
+  padding: 0 2em;
 }
 
 .redes .redes-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .redes a {
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .redes a .icon {
   width: 1.7em;
   height: 1.7em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 0;
 }
 
 .redes span {
   color: var(--Grayish-Blue);
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .redes .icon {
   margin-left: 1em;
 }
 
+@media screen and (min-width: 1024px) {
+  .redes {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 995;
+    right: -75px;
+    bottom: 80px;
+  }
+  .redes::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: var(--veryDark-Grayish-Blue);
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    z-index: -1;
+    top: 25px;
+  }
+}
+
 img {
   height: 200px;
   width: 100%;
   display: block;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  img {
+    width: 295px;
+    height: 275px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .wrapper {
   padding: 0 1.9em;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 625px;
+    width: 100%;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
