@@ -179,7 +179,7 @@ body .card {
   visibility: visible;
 }
 
-.redes {
+.redes-r {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 55px 1fr auto;
@@ -198,7 +198,7 @@ body .card {
   padding: 0 2em;
 }
 
-.redes .redes-icon {
+.redes-r .redes-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +208,7 @@ body .card {
           user-select: none;
 }
 
-.redes a {
+.redes-r a {
   text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -216,7 +216,7 @@ body .card {
           user-select: none;
 }
 
-.redes a .icon {
+.redes-r a .icon {
   width: 1.7em;
   height: 1.7em;
   -webkit-user-select: none;
@@ -226,19 +226,19 @@ body .card {
   border-radius: 0;
 }
 
-.redes span {
+.redes-r span {
   color: var(--Grayish-Blue);
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
 }
 
-.redes .icon {
+.redes-r .icon {
   margin-left: 1em;
 }
 
 @media screen and (min-width: 1024px) {
-  .redes {
+  .redes-r {
     position: absolute;
     width: 200px;
     height: 50px;
@@ -250,7 +250,7 @@ body .card {
     right: -75px;
     bottom: 80px;
   }
-  .redes::after {
+  .redes-r::after {
     content: "";
     width: 30px;
     height: 30px;
